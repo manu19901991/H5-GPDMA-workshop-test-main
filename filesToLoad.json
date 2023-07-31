@@ -1,0 +1,323 @@
+{
+  "title": "STM32H5 Workshop",
+  "githubLoc": "https://raw.githubusercontent.com/RRISTM/stm32u5_workshop/master/",
+  "options": {
+    "allowMenu": true,
+    "allowTagSelect": false
+  },
+  "filesToLoadArr": [
+    {
+      "name": "Preparation to STM32H5 workshop",
+      "path": "/introduction_instalation",
+      "file": "start.md"
+    },
+    {
+      "name": "STM32H5 Workshop - preparation before sessions",
+      "path": "/introduction_instalation",
+      "file": "file_live.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "10_gpdma_handson_demo.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "1_gpdma_handson_introduction.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "2_gpdma_handson_list_mode_intro.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "2_gpdma_handson_list_mode_mx.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "2_gpdma_handson_list_mode_ide.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "2_gpdma_handson_list_mode_ide_2.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "2_gpdma_handson_list_mode_ide_3.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "2_gpdma_handson_list_mode_code.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "3_gpdma_handson_uart_node_intro.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "3_gpdma_handson_uart_node_ide.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "3_gpdma_handson_uart_node_code.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "4_gpdma_handson_tim_trigger_intro.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "4_gpdma_handson_tim_trigger_ide.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "4_gpdma_handson_tim_trigger_code.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "5_gpdma_handson_2d_address_intro.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "5_gpdma_handson_2d_address_ide.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "5b_gpdma_handson_2d_address.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "6_gpdma_handson_events_intro.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "6_gpdma_handson_events_ide.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "7_conclusion.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "8_gpdma_handson_basic_gpdma_intro.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "8_gpdma_handson_basic_gpdma_ide.md"
+    },
+    {
+      "path": "/gpdma/workshop",
+      "file": "9_gpdma_theory_link.md"
+    },
+    {
+      "path": "/i3c",
+      "file": "handson_i3c.md"
+    },
+    {
+      "path": "/gpdma",
+      "file": "handson_gpdma.md"
+    },
+    {
+      "path": "/retention",
+      "file": "handson_gpio.md"
+    }
+  ],
+  "menuStructure": [
+    {
+      "type": "Folder",
+      "name": "BEFORE WORKSHOP",
+      "children": [
+        {
+          "type": "File",
+          "name": "Before sessions",
+          "file": "file_live.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "GPIO RETENTION",
+      "children": [
+        {
+          "name": "Hands-on",
+          "type": "File",
+          "file": "handson_gpio.md"
+        }
+      ]
+    },    
+    {
+      "type": "Folder",
+      "name": "I3C with LSM6DSO",
+      "children": [
+        {
+          "name": "Hands-on",
+          "type": "File",
+          "file": "handson_i3c.md"
+        }
+      ]
+    },    
+    {
+      "type": "Folder",
+      "name": "GPDMA - short",
+      "children": [
+        {
+          "name": "Hands-on",
+          "type": "File",
+          "file": "handson_gpdma.md"
+        }
+      ]
+    },    
+    {
+      "type": "Folder",
+      "name": "GPDMA - full",
+      "children": [
+        {
+          "name": "1. Introduction",
+          "type": "File",
+          "file": "1_gpdma_handson_introduction.md"
+        },
+        {
+          "type": "Folder",
+          "name": "2. Linked list",
+          "children": [
+            {
+              "name": "Introduction",
+              "type": "File",
+              "file": "2_gpdma_handson_list_mode_intro.md"
+            },
+            {
+              "name": "CubeIDE 1/2",
+              "type": "File",
+              "file": "2_gpdma_handson_list_mode_ide.md"
+            },
+            {
+              "name": "List config",
+              "type": "File",
+              "file": "2_gpdma_handson_list_mode_ide_2.md"
+            },
+            {
+              "name": "CubeIDE 2/2",
+              "type": "File",
+              "file": "2_gpdma_handson_list_mode_ide_3.md"
+            },
+            {
+              "name": "Example Code",
+              "type": "File",
+              "file": "2_gpdma_handson_list_mode_code.md"
+            }
+          ]
+        },
+        {
+          "type": "Folder",
+          "name": "3. UART node",
+          "children": [
+            {
+              "name": "Introduction",
+              "type": "File",
+              "file": "3_gpdma_handson_uart_node_intro.md"
+            },
+            {
+              "name": "CubeIDE",
+              "type": "File",
+              "file": "3_gpdma_handson_uart_node_ide.md"
+            },
+            {
+              "name": "Example Code",
+              "type": "File",
+              "file": "3_gpdma_handson_uart_node_code.md"
+            }
+          ]
+        },
+        {
+          "type": "Folder",
+          "name": "4. TIM trigger",
+          "children": [
+            {
+              "name": "Introduction",
+              "type": "File",
+              "file": "4_gpdma_handson_tim_trigger_intro.md"
+            },
+            {
+              "name": "CubeIDE",
+              "type": "File",
+              "file": "4_gpdma_handson_tim_trigger_ide.md"
+            },
+            {
+              "name": "Example Code",
+              "type": "File",
+              "file": "4_gpdma_handson_tim_trigger_code.md"
+            }
+          ]
+        },
+        {
+          "type": "Folder",
+          "name": "5. 2D addressing",
+          "children": [
+            {
+              "name": "Introduction",
+              "type": "File",
+              "file": "5_gpdma_handson_2d_address_intro.md"
+            },
+            {
+              "name": "CubeIDE",
+              "type": "File",
+              "file": "5_gpdma_handson_2d_address_ide.md"
+            }
+          ]
+        },
+        {
+          "type": "Folder",
+          "name": "6. Events",
+          "children": [
+            {
+              "name": "Introduction",
+              "type": "File",
+              "file": "6_gpdma_handson_events_intro.md"
+            },
+            {
+              "name": "CubeIDE",
+              "type": "File",
+              "file": "6_gpdma_handson_events_ide.md"
+            }
+          ]
+        },
+        {
+          "name": "7. Conclusion",
+          "type": "File",
+          "file": "7_conclusion.md"
+        },
+        {
+          "type": "Folder",
+          "name": "8. Basic DMA",
+          "children": [
+            {
+              "name": "Introduction",
+              "type": "File",
+              "file": "8_gpdma_handson_basic_gpdma_intro.md"
+            },
+            {
+              "name": "CubeIDE",
+              "type": "File",
+              "file": "8_gpdma_handson_basic_gpdma_ide.md"
+            }
+          ]
+        },
+        {
+          "type": "File",
+          "name": "9. Theory",
+          "file": "9_gpdma_theory_link.md"
+        }
+      ]
+    },
+    {
+      "type": "Folder",
+      "name": "GPDMA - demo",
+      "children": [
+        {
+          "type": "File",
+          "name": "Demo session",
+          "file": "10_gpdma_handson_demo.md"
+        }
+      ]
+    }
+  ]  
+}
