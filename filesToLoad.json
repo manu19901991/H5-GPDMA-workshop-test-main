@@ -154,7 +154,23 @@
           "file": "handson_i3c.md"
         }
       ]
-    },    
+    }
+    
+    {
+      "type": "Folder",
+      "name": "I3C Target/Controller",
+      "children": [
+        {
+          "name": "Hands-on",
+          "type": "File",
+          "file": "handson_i3c.md"
+        }
+      ]
+    }
+    
+    
+    
+    ,    
     {
       "type": "Folder",
       "name": "GPDMA - short",
