@@ -112,6 +112,12 @@
       "path": "/i3c",
       "file": "handson_i3c.md"
     },
+
+    {
+      "path": "/i3c",
+      "file": "handson_i3c_target.md"
+    },
+
     {
       "path": "/gpdma",
       "file": "handson_gpdma.md"
@@ -151,7 +157,7 @@
         {
           "name": "Hands-on",
           "type": "File",
-          "file": "handson_i3c.md"
+          "file": "handson_i3c_target.md"
         }
       ]
     }, 
