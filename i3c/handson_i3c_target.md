@@ -82,10 +82,10 @@ Assign PB0 to GPIO output and name it "USER_LED2"
 # Configure MX_I3C1_Init properties
 
 1. Go to **Project Manager** > **Project Name** give it a name
-2. Select **STM32CubeeIDE** as toolchain
+2. Select **STM32CubeIDE** as toolchain
 3. Click on **Generate code**
 
-![Porject Manager](./img/3.png)
+![Porject Manager](./img/3_1.png)
 
 # Create Core\Src\i3c_reg_io.c
 
