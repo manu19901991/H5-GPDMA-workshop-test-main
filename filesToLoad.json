@@ -115,6 +115,11 @@
 
     {
       "path": "/i3c",
+      "file": "handson_i3c_controller.md"
+    },
+
+    {
+      "path": "/i3c",
       "file": "handson_i3c_target.md"
     },
 
@@ -155,7 +160,13 @@
       "name": "I3C Target/Controller",
       "children": [
         {
-          "name": "Hands-on",
+          "name": "Hands-on Controller",
+          "type": "File",
+          "file": "handson_i3c_controller.md"
+        }
+,
+        {
+          "name": "Hands-on Target",
           "type": "File",
           "file": "handson_i3c_target.md"
         }
