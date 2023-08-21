@@ -77,7 +77,7 @@ Leave the default configuration (115200 baudrate, 8-bits without parity)
 # Configure LED
 Assign PB0 to GPIO output and name it "USER_LED2"
 
-![Configure LED](./img/4)
+![Configure LED](./img/4.png)
 	
 # Configure MX_I3C1_Init properties
 
@@ -85,7 +85,7 @@ Assign PB0 to GPIO output and name it "USER_LED2"
 2. Select **STM32CubeeIDE** as toolchain
 3. Click on **Generate code**
 
-![Porject Manager](./img/3)
+![Porject Manager](./img/3.png)
 
 # Create Core\Src\i3c_reg_io.c
 
