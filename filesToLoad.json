@@ -12,13 +12,13 @@
       "file": "start.md"
     },
     {
-      "name": "STM32H5 Workshop - preparation before sessions",
+      "name": "STM32H5 Workshop - preparation before the sessions",
       "path": "/introduction_instalation",
       "file": "file_live.md"
     },
 
     {
-      "name": "STM32H5 Workshop - preparation before sessions",
+      "name": "STM32WBA Workshop - preparation before the session",
       "path": "/introduction_instalation",
       "file": "file_live_1.md"
     },

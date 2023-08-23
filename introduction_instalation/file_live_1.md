@@ -1,7 +1,6 @@
----- !
+----!
 Presentation
-----! 
-
+----!
 
 # Introduction
 ## Dear Participant of STM32WBA Workshop,
@@ -25,7 +24,7 @@ To navigate within this manual, please use navigation buttons:
 
 <br>
 
-In case of any questions / problems please send us a mail at manuel.marcias@st.com
+In case of any questions / problems please send us a mail at  **[manuel.marcias@st.com](manuel.marcias@st.com)**
 
 See you on STM32H5 Workshop live session
 <br>
