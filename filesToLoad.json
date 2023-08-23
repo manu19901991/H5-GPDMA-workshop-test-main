@@ -16,6 +16,13 @@
       "path": "/introduction_instalation",
       "file": "file_live.md"
     },
+
+    {
+      "name": "STM32H5 Workshop - preparation before sessions",
+      "path": "/introduction_instalation",
+      "file": "file_live_1.md"
+    },
+
     {
       "path": "/gpdma/workshop",
       "file": "10_gpdma_handson_demo.md"
@@ -123,6 +130,11 @@
       "file": "handson_i3c_target.md"
     },
 
+     {
+      "path": "/i3c",
+      "file": "handson_i3c_final.md"
+    },
+
     {
       "path": "/gpdma",
       "file": "handson_gpdma.md"
@@ -139,11 +151,25 @@
       "children": [
         {
           "type": "File",
-          "name": "Before sessions",
+          "name": "Before STM32H5 session",
           "file": "file_live.md"
         }
+,
+        
+          {
+            "type": "File",
+            "name": "Before STM32WBA session",
+            "file": "file_live_1.md"
+          }
+
+
       ]
     },
+
+    {
+      "type": "Folder",
+      "name": "AT THE WORKSHOP",
+      "children": [
     {
       "type": "Folder",
       "name": "GPIO RETENTION",
@@ -170,6 +196,15 @@
           "type": "File",
           "file": "handson_i3c_target.md"
         }
+
+
+,
+        {
+          "name": "Board connection and results",
+          "type": "File",
+          "file": "handson_i3c_final.md"
+        }
+
       ]
     }, 
 
@@ -350,6 +385,13 @@
           "file": "10_gpdma_handson_demo.md"
         }
       ]
+      
     }
-  ]  
+  ] 
 }
+]
+}
+
+
+
+

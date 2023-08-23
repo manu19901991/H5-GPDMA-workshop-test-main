@@ -1,12 +1,13 @@
-----!
+---- !
 Presentation
-----!
+----! 
+
 
 # Introduction
-## Dear Participant of STM32H5 Workshop,
+## Dear Participant of STM32WBA Workshop,
 <br>
 
-Welcome to this short step-by-step guide which could help you to prepare to the live version of STM32H5 Workshop session.
+Welcome to this short step-by-step guide which could help you to prepare to the live version of STM32WBA Workshop session.
 
 You will find here:
 
@@ -36,20 +37,24 @@ See you on STM32H5 Workshop live session
 # Prerequisites
 - Hardware:
   - **PC with MS Windows 10 operating system and admin rights granted**
-  - **1 type-c/type-A USB** cable 
+  - **1 USB A to Micro-B Cable** cable 
   <br>
-  ![microUSB cables](./img/1.jpg)
+  ![microUSB cables](./img/uUSB.jpg)
   <br>
-  - **[NUCLEO-STM32H563ZI](https://www.st.com/en/evaluation-tools/nucleo-h563zi.html)** Nucleo-144 development board 
+  - **[NUCLEO-WBA52CG](https://www.st.com/en/evaluation-tools/nucleo-wba52cg.html)** Nucleo-64 development board 
   <br>
-  ![H5_DK](./img/NUCLEO-H563ZI.jpg)
+  ![H5_DK](./img/5.png)
   <br>
 - Software (PC with **MS Windows 10** operating system):
   - **[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)** in version 6.9.1
   - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.13.1
-  - **[STM32H5 Cube library](https://www.st.com/en/embedded-software/stm32cubeh5.html)** in version 1.1.1
+  - **[STM32WBA Cube library](https://www.st.com/en/embedded-software/stm32cubewba.html)** in version 1.1.0
   - **[Virtual COM port drivers](https://www.st.com/en/development-tools/stsw-stm32102.html)**
   -  any **serial terminal** application (e.g. **[Termite](https://termite.software.informer.com/3.4/)**)
+  - ST BLE ToolBox Smartphone Application - this has to be downloaded on your mobile
+    - **[Android version](https://play.google.com/store/apps/details?id=com.st.dit.stbletoolbox&hl=it&gl=US&pli=1)**
+    - **[IOS version](https://apps.apple.com/it/app/st-ble-toolbox/id1531295550)**
+
 <br>
 
 # Installation process
@@ -57,25 +62,16 @@ See you on STM32H5 Workshop live session
 - install **STM32CubeMX** (if not yet done)
 - download **STM32CubeIDE** from [here](https://www.st.com/en/development-tools/stm32cubeide.html)
 - Install **STM32CubeIDE** (if not yet done)
-- download and install **STM32H5 Cube library** (if not done yet):
+- download and install **STM32WBA Cube library** (if not done yet):
   - run **STM32CubeMX**
   - go to `Help -> Manage Embedded Software Packages`
-  - within package manager window find `STM32H5`, unroll it and select newest available version ( in your case STM32H5 1.1.0)
+  - within package manager window find `STM32WBA`, unroll it and select newest available version ( in your case STM32WBA 1.1.0)
   - press `install now`
 <br>
-![H5_Lib_Install](./img/H5Lib.jpg)
-<br>
-- In case of library installation problems please try an alternative way:
-  - download **STM32H5 Cube library** (.zip file)
-  - run **STM32CubeMX**
-  - go to `Help -> Manage Embedded Software Packages`
-  - within package manager window use option `From local` 
-<br>  
-![U5_Lib_Install_from_local](./img/2.png)
-<br>
+![H5_Lib_Install](./img/6.png)
 
 <ainfo>
-STM32CubeMX and STM32CubeIDE are using the same repository by default, so the installed STM32H5 Cube library will be visible in both tools.
+STM32CubeMX and STM32CubeIDE are using the same repository by default, so the installed STM32WBA Cube library will be visible in both tools.
 </ainfo>
 
 
@@ -88,7 +84,7 @@ The purpose of this part is checking whether all software components are install
 <br>
 Additionally prepared test project can be a base for next hands-on parts during the workshop.
 
-## **STM32CubeIDE and STM32H5 Cube library**
+## **STM32CubeIDE and STM32WBA Cube library**
 <br>
 
 ----
@@ -112,9 +108,8 @@ Additionally prepared test project can be a base for next hands-on parts during 
 <br>
 ## **Step1** - project creation and peripherals configuration
  - Run **STM32CubeIDE**
- - Specify workspace location (i.e. `C:\_Work\H5_GPDMA`)
-<br>
-![Workspace_start](./img/CubeIDE_WS.apng)
+ - Specify workspace location (i.e. `C:\_Work\WBA_ex1`)
+
 <br>
 - Start new project using one of the below methods:
   - by selecting `File->New->STM32Project` 
@@ -123,10 +118,10 @@ Additionally prepared test project can be a base for next hands-on parts during 
   ![Workspace_start2](./img/New_prj_start_2.gif)
 <br>
 - switch to **Board Selector** tab
-- select NUCLEO-**H563**ZI board
+- select **NUCLEO-WBA52CG** board
 - press `Next` button
 - within STM32 Project window:
-  - specify project name (i.e. `H5_UART`)
+  - specify project name (i.e. `WBA_UART`)
   - keep **enable TrustZone** option unchecked
   - press `Finish` button
   - on question pop-up window "Initialize all peripherals with their default state?" press `No` button 
@@ -140,22 +135,16 @@ Additionally prepared test project can be a base for next hands-on parts during 
 - **ICACHE configuration** (System Core group)
   - select either 1-way or 2-ways (we will not focus on performance within this workshop)
   <br>
-  ![ICACHE configuration](./img/CubeIDE_ICACHE.apng)
+  ![ICACHE configuration](./img/8.gif)
   <br>
 - **USART3 configuration** (Connectivity group)
   - select Asynchronous mode
   - keep default settings in configuration:
     - Basic parameters: 115200bps, 8bits data, 1 stop bit, no parity
-    - Pins assignment: PD8, PD9
+    - Pins assignment: PA8, PB12
     - no interrupts, no DMA usage
   <br>
-    ![USART3 configuration](./img/CubeIDE_UART.apng)
-<br>
-- **SWD configuration** (Trace and debug group)
-  - select Serial wire debug
-  - this is usually not necessary, because of default state of SWD pins, but it is good habit to do it
-  <br>
-    ![SWD configuration](./img/CubeIDE_SWD.apng)
+    ![USART3 configuration](./img/9.gif)
 <br>
 - **Project settings**
   - select `Project Manager` tab
@@ -227,7 +216,7 @@ Wait for 250 ms
 <br>
 
 <ainfo>
-In case of neither errors nor warnings after this process, STM32CubeIDE and STM32H5 library are installed correctly. Last point - debug session will be verified during first hands on part on the workshop.
+In case of neither errors nor warnings after this process, STM32CubeIDE and STM32WBA library are installed correctly. Last point - debug session will be verified during first hands on part on the workshop.
 </ainfo>
 
 
@@ -241,12 +230,11 @@ In case of neither errors nor warnings after this process, STM32CubeIDE and STM3
 - Access to tools dedicated web pages:
   - [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
   - [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
-  - [STM32H5 Cube library](https://www.st.com/en/embedded-software/stm32cubeh5.html)
+  - [STM32WBA Cube library](https://www.st.com/en/embedded-software/stm32cubewba.html)
 - [STM32 on-line training resources](https://www.st.com/content/st_com/en/support/learning/stm32-education/stm32-moocs.html)
 - documentation
-  - [STM32H563 datasheet](https://www.st.com/resource/en/datasheet/stm32h563zi.pdf)
-  - [STM32H563 reference manual](https://www.st.com/resource/en/reference_manual/rm0456-stm32u575585-armbased-32bit-mcus-stmicroelectronics.pdf)
-  - [NUCLEO-H563ZI-Q board schematics](https://www.st.com/resource/en/schematic_pack/mb1549-u575ziq-c03_schematic.pdf)
+  - [STM32WBA52xx datasheet](https://www.st.com/resource/en/datasheet/stm32wba52ce.pdf)
+  - [STM32WBA52xx reference manual](https://www.st.com/en/microcontrollers-microprocessors/stm32wb-series/documentation.html)
 - Complete slide deck for the session [this link](https://github.com/RRISTM/stm32u5_workshop/tree/master/material_pdf)
 
 
