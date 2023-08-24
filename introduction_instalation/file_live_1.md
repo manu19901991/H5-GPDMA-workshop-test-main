@@ -26,7 +26,7 @@ To navigate within this manual, please use navigation buttons:
 
 In case of any questions / problems please send us a mail at  **[manuel.marcias@st.com](manuel.marcias@st.com)**
 
-See you on STM32H5 Workshop live session
+See you on STM32WBA Workshop live session
 <br>
 
 ## Yours,
@@ -96,7 +96,7 @@ Additionally prepared test project can be a base for next hands-on parts during 
   - Enable SWD for debug
   - Disable TrustZone
   - Configure ICACHE (in any of available modes)
-- Select and configure USART3
+- Select and configure USART1
   - in asynchronous mode,
   - using default settings (115200bps, 8D, 1stop bit, no parity) 
   - on PA9/PA10 pins
@@ -128,7 +128,7 @@ Additionally prepared test project can be a base for next hands-on parts during 
   - on worning pop-up window "Do you still want a code generation?", press `No` button 
   - on following information pop-up window, it was our decision did not generate code, press `OK` button 
   <br>
-   ![Workspace_start3](./img/CubeIDE_Start.apng)
+   ![Workspace_start3](./img/11.gif)
 <br>
 - Peripherals configuration: Pinout&Configuration tab
 - **ICACHE configuration** (System Core group)
@@ -136,7 +136,7 @@ Additionally prepared test project can be a base for next hands-on parts during 
   <br>
   ![ICACHE configuration](./img/8.gif)
   <br>
-- **USART3 configuration** (Connectivity group)
+- **USART1 configuration** (Connectivity group)
   - select Asynchronous mode
   - keep default settings in configuration:
     - Basic parameters: 115200bps, 8bits data, 1 stop bit, no parity
@@ -150,14 +150,14 @@ Additionally prepared test project can be a base for next hands-on parts during 
   - check project location (.ioc file)
   - check project name
 <br>
-   ![Project settings](./img/CubeIDE_Proj.apng)
+   ![Project settings](./img/12.gif)
 <br>
   - generate project by one of the ways:
     - by pressing "gear" icon
     - by select `Project->Generate Code`
     - by pressing **Alt+K**
 <br>
-  ![Project generation](./img/CubeIDE_GenCode.apng)
+  ![Project generation](./img/13.gif)
 <br>
 
 ----
@@ -169,11 +169,9 @@ Define the buffer of bytes to be sent over **USART3** (`USER CODE PV` section):
 <br>
 
 ```c
-  uint8_t buffer[]={"Hello STM32H5\r\n"};
+  uint8_t buffer[]={"Hello STM32WBA\r\n"};
 ```
 
-<br>
-![Coding1](./img/CubeIDE_Coding1.apng)
 <br>
 Turn on **LED1_GREEN** (`USER CODE 2` section):
 <br>
@@ -182,8 +180,6 @@ Turn on **LED1_GREEN** (`USER CODE 2` section):
   HAL_GPIO_WritePin(LED1_GREEN_GPIO_Port, LED1_GREEN_Pin, 1);
 ```
 
-<br>
-![Coding2](./img/CubeIDE_Coding2.apng)
 <br>
 Toggle **LED1_GREEN** (`USER CODE 3` section)
 <br>
@@ -195,10 +191,11 @@ Wait for 250 ms
 <br>
 
 ```c
-  HAL_GPIO_TogglePin(LED1_GREEN_GPIO_Port, LED1_GREEN_Pin);
-  HAL_GPIO_TogglePin(LED2_YELLOW_GPIO_Port, LED2_YELLOW_Pin);
-  HAL_UART_Transmit(&huart3, buffer, 15, 200);
-  HAL_Delay(250);
+ HAL_GPIO_TogglePin(LD1_GPIO_Port, LD1_Pin);
+	  HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
+	  HAL_GPIO_TogglePin(LD3_GPIO_Port, LD3_Pin);
+	  HAL_UART_Transmit(&huart1, buffer, 15, 200);
+	  HAL_Delay(250);
 ```
 
 <br>
@@ -211,7 +208,7 @@ Wait for 250 ms
 ## **Step 3** - build the project
 - Build the project using `hammer` button or `Project->Built All` or **Ctrl+B**
 <br>
-![Project build](./img/CubeIDE_Build.apng)
+![Project build](./img/14.gif)
 <br>
 
 <ainfo>
