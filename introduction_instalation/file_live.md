@@ -249,7 +249,7 @@ In case of neither errors nor warnings after this process, STM32CubeIDE and STM3
   - [STM32H563 datasheet](https://www.st.com/resource/en/datasheet/stm32h563zi.pdf)
   - [STM32H563 reference manual](https://www.st.com/resource/en/reference_manual/rm0456-stm32u575585-armbased-32bit-mcus-stmicroelectronics.pdf)
   - [NUCLEO-H563ZI-Q board schematics](https://www.st.com/resource/en/schematic_pack/mb1549-u575ziq-c03_schematic.pdf)
-- **Complete slide deck for the session** [this link](https://github.com/RRISTM/stm32u5_workshop/tree/master/material_pdf)
+
 
 ----
 
