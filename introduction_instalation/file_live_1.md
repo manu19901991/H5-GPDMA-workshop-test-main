@@ -43,7 +43,8 @@ We look forward to seeing you at the STM32WBA Workshop live session!
   <br>
   ![microUSB cables](./img/uUSB.jpg)
   <br>
-  - **[NUCLEO-WBA52CG](https://www.st.com/en/evaluation-tools/nucleo-wba52cg.html)** Nucleo-64 development board 
+  - **[NUCLEO-WBA52CG](https://www.st.com/en/evaluation-tools/nucleo-wba52cg.html)** Nucleo-64 development board.
+  It will be provided to you by ST during the handson 
   <br>
   ![H5_DK](./img/5.png)
   <br>

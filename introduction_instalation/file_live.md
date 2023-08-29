@@ -42,7 +42,7 @@ We look forward to seeing you at the STM32H5 Workshop live session!
   <br>
   ![microUSB cables](./img/0.png)
   <br>
-  - **[NUCLEO-STM32H563ZI](https://www.st.com/en/evaluation-tools/nucleo-h563zi.html)** Nucleo-144 development board 
+  - **[NUCLEO-STM32H563ZI](https://www.st.com/en/evaluation-tools/nucleo-h563zi.html)** Nucleo-144 development board. It will be provided to you by ST during the handson
   <br>
   ![H5_DK](./img/NUCLEO-H563ZI.jpg)
   <br>
