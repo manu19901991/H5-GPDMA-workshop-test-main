@@ -160,9 +160,6 @@ Additionally prepared test project can be a base for next hands-on parts during 
     - by pressing "gear" icon
     - by select `Project->Generate Code`
     - by pressing **Alt+K**
-<br>
-  ![Project generation](./img/13.gif)
-<br>
 
 ----
 
