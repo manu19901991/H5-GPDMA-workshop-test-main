@@ -6,27 +6,30 @@ Presentation
 ## Dear Participant of STM32WBA Workshop,
 <br>
 
-Welcome to this short step-by-step guide which could help you to prepare to the live version of STM32WBA Workshop session.
+<ainfo>
+You are supposed to move to this section after completing the installation and downloads described in "Before STM32H5 session"
+</ainfo>
 
-You will find here:
+----
 
- - all information about prerequisites (software and hardware), 
- - short information about installation process, 
- - links to materials useful for this session
+Welcome to our comprehensive guide on how to prepare for the live version of the STM32H5 Workshop session. This step-by-step guide is designed to provide you with all the necessary information about the prerequisites, installation process, and links to materials that will be useful during the session.
 
-Additionally, in appendixes you can find some basic information about the board we will use during the session and useful information about configuration and usage of STM32CubeIDE built in terminal
+In this guide, you will find detailed information about the required software and hardware, as well as a brief overview of the installation process. Additionally, we have included links to materials that will be helpful during the session.
+
+
+In the appendix, you will find some basic information about the board that we will be using during the session, as well as useful information about the configuration and usage of the STM32CubeIDE.
 <br>
 
-To navigate within this manual, please use navigation buttons:
+To navigate through this guide, please use the navigation buttons provided.
 <br>
 
   ![navigation](./img/navigation.gif)
 
 <br>
 
-In case of any questions / problems please send us a mail at  **[manuel.marcias@st.com](manuel.marcias@st.com)**
+If you have any questions or encounter any problems, please do not hesitate to contact us at  **[manuel.marcias@st.com](manuel.marcias@st.com)**
 
-See you on STM32WBA Workshop live session
+We look forward to seeing you at the STM32WBA Workshop live session!
 <br>
 
 ## Yours,
@@ -48,6 +51,7 @@ See you on STM32WBA Workshop live session
   - **[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)** in version 6.9.1
   - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.13.1
   - **[STM32WBA Cube library](https://www.st.com/en/embedded-software/stm32cubewba.html)** in version 1.1.0
+  - **[CubeMx .ioc project template](https://github.com/manu19901991/WBA_WS/tree/main)** we will use it during hands-on
   - **[Virtual COM port drivers](https://www.st.com/en/development-tools/stsw-stm32102.html)**
   -  any **serial terminal** application (e.g. **[Termite](https://termite.software.informer.com/3.4/)**)
   - ST BLE ToolBox Smartphone Application - this has to be downloaded on your mobile
@@ -99,7 +103,7 @@ Additionally prepared test project can be a base for next hands-on parts during 
 - Select and configure USART1
   - in asynchronous mode,
   - using default settings (115200bps, 8D, 1stop bit, no parity) 
-  - on PA9/PA10 pins
+  - on PA8/PB12 pins
 <br>
 
 ----
@@ -230,7 +234,7 @@ In case of neither errors nor warnings after this process, STM32CubeIDE and STM3
 - [STM32 on-line training resources](https://www.st.com/content/st_com/en/support/learning/stm32-education/stm32-moocs.html)
 - documentation
   - [STM32WBA52xx datasheet](https://www.st.com/resource/en/datasheet/stm32wba52ce.pdf)
-  - [STM32WBA52xx reference manual](https://www.st.com/en/microcontrollers-microprocessors/stm32wb-series/documentation.html)
-- Complete slide deck for the session [this link](https://github.com/RRISTM/stm32u5_workshop/tree/master/material_pdf)
+  - [STM32WBA52xx reference manual](https://www.st.com/resource/en/reference_manual/rm0493-multiprotocol-wireless-bluetooth-lowenergy-armbased-32bit-mcu-stmicroelectronics.pdf)
+
 
 
