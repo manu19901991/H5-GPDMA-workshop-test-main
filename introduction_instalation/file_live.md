@@ -40,7 +40,7 @@ We look forward to seeing you at the STM32H5 Workshop live session!
   - **PC with MS Windows 10 operating system and admin rights granted**
   - **1 type-c/type-A USB** cable 
   <br>
-  ![microUSB cables](./img/0.jpg)
+  ![microUSB cables](./img/0.png)
   <br>
   - **[NUCLEO-STM32H563ZI](https://www.st.com/en/evaluation-tools/nucleo-h563zi.html)** Nucleo-144 development board 
   <br>
