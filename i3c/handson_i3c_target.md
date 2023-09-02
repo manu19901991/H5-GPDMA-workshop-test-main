@@ -15,7 +15,8 @@ Steps 3-5 are performed in loop sequence
 
 # Create CubeMX project for Controller 
 
-1. Select **NUCLEO-H563ZI** - this will initialize the LEDs and push buttons automatically
+1. Start From **BOARD SELECTOR**
+2. Select **NUCLEO-H563ZI** - this will initialize the LEDs and push buttons automatically
 2. When prompted "Initialize all peripherals in default mode", select **no**
 3. Select project **without TrustZone**
 	
@@ -26,19 +27,17 @@ Steps 3-5 are performed in loop sequence
 
 1. Enable I3C1 in **Target** mode <br />
 	* Leave default config - I3C pure bus, Frequency= 12500kHz
-	![Enable I3C](./img/5.png)
+	![Enable I3C](./img/27.png)
 2. Enable event & error interrupts in NVIC <br />
 	![Enable I3C interrupts](./img/2_i3c_nvic.png)
-3. Set **Target Chracteristi ID** to 0xC6
+3. in Parameter Settings tab, Set **Target Chracteristic ID** to 0xC6
 	- This is the DCR MIPI value for MCU
 4. Enable **In-band-Interrupt authorized and associated additional data**
 5. Keep **Payload 1bye**
 	![enable I3C IBI](./img/6.png)
 # Move I3C pins to PB8/PB9
-
-To move pins:
-1. CTRL + left-click on the pin to see alternative pins
-2. Drag & drop
+1. to move pins, CTRL + left-click on the pin to see alternative pins
+2. as a second option simple Drag & drop
 
 Alternatively you can also click directly on PB8 and PB9 and select the function
 
@@ -58,15 +57,16 @@ Leave the default configuration (115200 baudrate, 8-bits without parity)
 
 ![Enable USART3](./img/2_usart3_enable.png)
 
-Map USART3 to PD8 and PD9 which are connected to STLINK VCP
+This setting will map USART3 to PD8 and PD9 which are connected to STLINK VCP
 ![Enable USART3](./img/7.png)
 
 # Configure Wakeup Button
-Assign PC13 to GPIO output and name it «WAKEUP»
+Go to PC13 and rename it «WAKEUP» by right clicking and selecting "Enter User Label"
 ![wakeup button](./img/8.png)
 
 # Configure LED
 Assign PB0 to GPIO output and name it "USER_LED2"
+To rename, right click on PB0 and select "Enter User Label"
 
 ![Configure LED](./img/4.png)
 	
@@ -75,16 +75,18 @@ Assign PB0 to GPIO output and name it "USER_LED2"
 1. Go to **Project Manager** > **Project Name** give it a name
 2. Select **STM32CubeIDE** as toolchain
 3. Click on **Generate code**
+4. Click **YES** on the warning related to ICACHE
+5. Click **Open Project**
 
-![Porject Manager](./img/3_1.png)
+![Porject Manager](./img/28.png)
 
 # modify the main.c file
 
-I3C Target variables definition
+I3C Target variables definition @line 49
 
 ```c
 /* USER CODE BEGIN PV */
-/* USER CODE BEGIN PV */
+
 uint8_t ubPayloadBuffer[] = {0xAB};
 
 /* Variable to catch ENTDAA completion */
@@ -97,6 +99,7 @@ __IO uint8_t ubIBIcplt = 0;
 
 # implement notifications callbacks
 ```c
+add this @line 72
 /* USER CODE BEGIN 0 */
 void HAL_I3C_NotifyCallback(I3C_HandleTypeDef *hi3c, uint32_t eventId)
 {
@@ -118,6 +121,7 @@ void HAL_I3C_NotifyCallback(I3C_HandleTypeDef *hi3c, uint32_t eventId)
 ```
 
 # Implement Printf via UART
+add this at line 22
 ```c
 /* USER CODE BEGIN Includes */
 #include "stdio.h"
@@ -126,7 +130,7 @@ void HAL_I3C_NotifyCallback(I3C_HandleTypeDef *hi3c, uint32_t eventId)
 /* USER CODE END Includes */
 ```
 
-below **HAL_GPIO_TogglePin**
+add this below **HAL_GPIO_TogglePin** around line 96 in **/* USER CODE END 0 */**
 
 ```c
 
@@ -141,6 +145,7 @@ PUTCHAR_PROTOTYPE
 ```
 
 # I3C target initialization
+add the below @line 139
 ```c
  /* USER CODE BEGIN 2 */
   printf("Hello STM32H5 I3C Target...\n");
@@ -157,7 +162,7 @@ PUTCHAR_PROTOTYPE
 ```
 
 # Target main loop
-After this step you can build and program target board
+After this step you can build and program the target board then move to the next chapers **Board Connection and results**
 
 ```c
  /* USER CODE BEGIN WHILE */

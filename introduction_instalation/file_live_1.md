@@ -12,7 +12,7 @@ You are supposed to move to this section after completing the installation and d
 
 ----
 
-Welcome to our comprehensive guide on how to prepare for the live version of the STM32H5 Workshop session. This step-by-step guide is designed to provide you with all the necessary information about the prerequisites, installation process, and links to materials that will be useful during the session.
+Welcome to our comprehensive guide on how to prepare for the live version of the STM32WBA Workshop session. This step-by-step guide is designed to provide you with all the necessary information about the prerequisites, installation process, and links to materials that will be useful during the session.
 
 In this guide, you will find detailed information about the required software and hardware, as well as a brief overview of the installation process. Additionally, we have included links to materials that will be helpful during the session.
 

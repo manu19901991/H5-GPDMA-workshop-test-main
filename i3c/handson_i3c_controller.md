@@ -4,7 +4,7 @@ Presentation
 
 # I3C hands-on: Introduction
 
-Goal of this hands-on is to create simple I3C example, basically a communication between two boards
+The goal of this hands-on is to create a simple I3C example, basically a communication between two boards:
 
 - Controller
 - Target 
@@ -12,11 +12,14 @@ Goal of this hands-on is to create simple I3C example, basically a communication
 The Controller will perform a dynamic address assignment 
 The Target board will send an In-band-interrupt (IBI) when a button is pressed
 
-- Please work in prais to test this hands-on. Choose who will be the Controller and who will develop the target!
+- **Please work in pairs** to test this hands-on. Choose who will be the Controller and who will develop the target!
 
 The example is based on I3C_Controller_InBandInterrupt_IT and I3C_Target_InBandInterrupt_IT examples for Nucleo-H503RB
 
-// here we could add the picture of kumper cables //
+During this section we distribute you three jumper cables each two attendees used to connect the target and controller board:
+
+![two boards](./img/22.png)
+
 
 # I3C Controller Sequence
 
@@ -25,17 +28,17 @@ The example is based on I3C_Controller_InBandInterrupt_IT and I3C_Target_InBandI
 	* This will assign address to each new device
 3. Configure/ Enable reception of IBI from selected adresses
 	* if we skip this step we never get the ACK from the controller
-	* this is just interla operation, no communication on the I3C bus
-	* real sensor will probably need some more commands or register writes to be enabled
+	* this is just internal operation, no communication on the I3C bus
+	* a real sensor will probably need some more commands and register writes to be enabled
 
 4. We receive IBI via I3C interrupt
-5. We read IBI source address and payload in main loop
-	** LED is toggled when IBI is received **
+5. We read IBI source address and payload in main loop then
+	**the LED is toggled when IBI is received **
 
 
 # Create CubeMX project for Controller 
-
-1. Select **NUCLEO-H563ZI** - this will initialize the LEDs and push buttons automatically
+1. Start From **BOARD SELECTOR**
+2. Select **NUCLEO-H563ZI** - this will initialize the LEDs and push buttons automatically
 2. When prompted "Initialize all peripherals in default mode", select **no**
 3. Select project **without TrustZone**
 	
@@ -44,17 +47,15 @@ The example is based on I3C_Controller_InBandInterrupt_IT and I3C_Target_InBandI
 
 # Configure I3C peripheral for Controller
 
-1. Enable I3C1 in **Controller** mode <br />
-	* Leave default config - I3C pure bus, Frequency= 12500kHz
+1. Enable I3C1 in **Controller** mode - Leave default config - I3C pure bus, Frequency= 12500kHz <br />
 	![Enable I3C](./img/2_i3c_enable.png)
+
 2. Enable event & error interrupts in NVIC <br />
 	![Enable I3C interrupts](./img/2_i3c_nvic.png)
 
 # Move I3C pins to PB8/PB9
-
-To move pins:
-1. CTRL + left-click on the pin to see alternative pins
-2. Drag & drop
+1. to move pins, CTRL + left-click on the pin to see alternative pins
+2. as a second option simple Drag & drop
 
 Alternatively you can also click directly on PB8 and PB9 and select the function
 
@@ -66,9 +67,6 @@ Internal pull-up on GPIO is 40kOhm tipycal
 ![I3C GPIO setting](./img/2_i3c_gpio_settings.png)
 
 # Enable USART3
-
-_**This step should be done automatically when creating project with "Initialize all peripherals in default mode"**_
-
 Enable USART3 in **Asynchronous** mode
 Leave the default configuration (115200 baudrate, 8-bits without parity)
 
@@ -76,6 +74,7 @@ Leave the default configuration (115200 baudrate, 8-bits without parity)
 
 # Configure LED
 Assign PB0 to GPIO output and name it "USER_LED2"
+To rename, right click on PB0 and select "Enter User Label"
 
 ![Configure LED](./img/4.png)
 	
@@ -84,12 +83,13 @@ Assign PB0 to GPIO output and name it "USER_LED2"
 1. Go to **Project Manager** > **Project Name** give it a name
 2. Select **STM32CubeIDE** as toolchain
 3. Click on **Generate code**
-
+4. Click **YES** on the warning related to ICACHE
+5. Click **Open Project**
 ![Porject Manager](./img/3_1.png)
 
 # modify the main.c file
 
-I3C Controller variables definition
+I3C Controller variables definition @line 48 
 
 ```c
 /* USER CODE BEGIN PV */
@@ -112,6 +112,8 @@ uint8_t xferData_tx[3];                 /* Buffer for TX-FIFO (3-bytes) */
 ```
 
 # implement ENTDAA callbacks
+
+below code should added @line 80
 ```c
 /* USER CODE BEGIN 0 */
 void HAL_I3C_TgtReqDynamicAddrCallback(I3C_HandleTypeDef *hi3c, uint64_t targetPayload)
@@ -160,7 +162,7 @@ void HAL_I3C_ErrorCallback(I3C_HandleTypeDef *hi3c){
 /* USER CODE END Includes */
 ```
 
-below **HAL_I3C_ErrorCallback**
+below **HAL_I3C_ErrorCallback** @line 120 still in **/* USER CODE END 0 */** 
 
 ```c
 
@@ -175,9 +177,10 @@ PUTCHAR_PROTOTYPE
 ```
 
 # Execute dynamic address assignment
+add this @line 160
 ```c
 /* USER CODE BEGIN 2 */
-  printf("\n\nHello STM32H5!\n");
+  printf("\n\n Hello STM32H5 Controller!\n");
     HAL_I3C_Ctrl_DynAddrAssign_IT(&hi3c1, I3C_RSTDAA_THEN_ENTDAA);
 
     while(uwEnumDone == 0);
@@ -200,7 +203,7 @@ PUTCHAR_PROTOTYPE
 ```
 
 # Controller main loop
-After this step you can build and program controller board
+After this step you can build and program the controller board
 
 ```c
  /* USER CODE BEGIN WHILE */
