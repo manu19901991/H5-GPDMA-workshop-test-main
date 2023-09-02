@@ -146,6 +146,7 @@ PUTCHAR_PROTOTYPE
 
 # I3C target initialization
 add the below @line 139
+
 ```c
  /* USER CODE BEGIN 2 */
   printf("Hello STM32H5 I3C Target...\n");

@@ -114,6 +114,7 @@ uint8_t xferData_tx[3];                 /* Buffer for TX-FIFO (3-bytes) */
 # implement ENTDAA callbacks
 
 below code should added @line 80
+
 ```c
 /* USER CODE BEGIN 0 */
 void HAL_I3C_TgtReqDynamicAddrCallback(I3C_HandleTypeDef *hi3c, uint64_t targetPayload)
@@ -178,6 +179,7 @@ PUTCHAR_PROTOTYPE
 
 # Execute dynamic address assignment
 add this @line 160
+
 ```c
 /* USER CODE BEGIN 2 */
   printf("\n\n Hello STM32H5 Controller!\n");
