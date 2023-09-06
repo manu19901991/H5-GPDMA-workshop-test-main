@@ -179,7 +179,7 @@ Turn on **LED1_GREEN** (`USER CODE 2` section):
 <br>
 
 ```c
-  HAL_GPIO_WritePin(LED1_GREEN_GPIO_Port, LED1_GREEN_Pin, 1);
+  HAL_GPIO_WritePin(LD1_GPIO_Port, LD1_Pin, 1);
 ```
 
 <br>
