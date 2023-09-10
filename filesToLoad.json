@@ -153,6 +153,11 @@
       "path": "/WBA",
       "file": "wba_ho2.md"
     }
+,
+    {
+      "path": "/survey",
+      "file": "survey_1.md"
+    }
 
   ],
   "menuStructure": [
@@ -183,7 +188,7 @@
       "children": [
     {
       "type": "Folder",
-      "name": "GPIO RETENTION",
+      "name": "GPIO Retention",
       "children": [
         {
           "name": "Hands-on",
@@ -413,6 +418,21 @@
           "name": "Hands_on2",
           "file": "wba_ho2.md"
         }
+
+      ]
+      
+    }
+,
+    {
+      "type": "Folder",
+      "name": "Survey",
+      "children": [
+        {
+          "type": "File",
+          "name": "Survey_Monkey",
+          "file": "survey_1.md"
+        }
+
 
       ]
       

@@ -2,7 +2,14 @@
 Presentation
 ----!
 
+
+
 # Add application code to toggle LED from client
+
+<ainfo>
+If you are stuck during hands-on1 you can download at this **[link](https://github.com/manu19901991/STM32_WBA_EX2_Template)** the solution that will help you to follow along with part hands on 2
+</ainfo>
+---
 
 code needs to be added in **STM32_WPAN/App/p2p_server_app.c** inside the function P2P_SERVER_Notification() ~line 110 in **/*USER CODE BEGIN Service1Char1_WRITE_NO_RESP_EVT*/**
 
@@ -12,7 +19,7 @@ HAL_GPIO_TogglePin(GPIOB, LD2_Pin|LD3_Pin|LD1_Pin);
 
 # Add application code to rise an alarm from device to Smartphone
 
-1. code needs to be added in **Core/Inc/app_conf.h** ~line 110  in **/*USER CODE BEGIN CFG_Task_Id_t*/**
+1. code needs to be added in **Core/Inc/app_conf.h** ~line 376 in **/*USER CODE BEGIN CFG_Task_Id_t*/**
 
 ```c
 TASK_BUTTON_1,
@@ -32,7 +39,7 @@ void HAL_GPIO_EXTI_Rising_Callback(uint16_t GPIO_Pin)
 {
   if (GPIO_Pin == B1_Pin)
   {
-	  flag=1;
+	 
     UTIL_SEQ_SetTask(1U << TASK_BUTTON_1, CFG_SEQ_PRIO_0);
   }
 

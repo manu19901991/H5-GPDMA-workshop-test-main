@@ -6,6 +6,11 @@ Presentation
 ## Dear Participant of STM32H5 Workshop,
 <br>
 
+<awarning>
+**.ZIP file containing workshop slides can be found **[here](https://github.com/manu19901991/WS_SLIDES)****
+</awarning>
+
+---
 <ainfo>
 You are supposed to move the following section "Before STM32WBA session" once you completed this chapter
 </ainfo>
