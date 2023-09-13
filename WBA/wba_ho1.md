@@ -2,9 +2,9 @@
 Presentation
 ----!
 
-<ainfo>
+<awarning>
 WE ARE GOING TO USE A DIFFERENT .IOC FILE FROM THE ONE YOU DOWNLOADED IN PREREQUISITES. PLEASE GET IT FROM THIS **[link](https://github.com/manu19901991/STM32_WBA_EX2_Template)** this contains the template project that we will use in our handson
-</ainfo>
+</awarning>
 
 ---
 
