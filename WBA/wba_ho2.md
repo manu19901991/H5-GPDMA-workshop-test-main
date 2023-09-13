@@ -6,11 +6,6 @@ Presentation
 
 # Add application code to toggle LED from client
 
-<ainfo>
-If you are stuck during hands-on1 you can download at this **[link](https://github.com/manu19901991/STM32_WBA_EX2_Template)** the solution that will help you to follow along with part hands on 2
-</ainfo>
----
-
 code needs to be added in **STM32_WPAN/App/p2p_server_app.c** inside the function P2P_SERVER_Notification() ~line 110 in **/*USER CODE BEGIN Service1Char1_WRITE_NO_RESP_EVT*/**
 
 ```c
