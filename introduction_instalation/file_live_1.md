@@ -66,7 +66,7 @@ We look forward to seeing you at the STM32WBA Workshop live session!
 - Install **STM32CubeIDE** (if not yet done)
 - download and install **STM32WBA Cube library** (if not done yet):
   - run **STM32CubeIDE**
-  - go to `Help -> Manage Embedded Software Packages`
+  - go to `Help -> Manage Embedded Software Package`
   - within package manager window find `STM32WBA`, unroll it and select newest available version ( in your case STM32WBA 1.1.0)
   - press `install now`
 <br>
