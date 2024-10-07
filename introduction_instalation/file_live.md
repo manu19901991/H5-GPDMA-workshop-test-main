@@ -71,9 +71,11 @@ We look forward to seeing you at the STM32H5 Workshop live session!
 
 
 - Software (PC with **MS Windows 10** operating system):
+  - **[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)** in version 6.12.0 or later
   - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.16.0 or later
   - **[STM32U0 Cube library](https://www.st.com/en/embedded-software/stm32cubeu0.html)** in version 1.1.0 or later
   - **[Virtual COM port drivers](https://www.st.com/en/development-tools/stsw-stm32102.html)**
+  - **[STM32Cube Monitor Power](https://www.st.com/en/development-tools/stm32cubemonpwr.html)** in version 1.2.0
   -  any **serial terminal** application (e.g. **[Termite](https://termite.software.informer.com/3.4/)**)
 <br>
 
@@ -85,22 +87,13 @@ We look forward to seeing you at the STM32H5 Workshop live session!
 - download and install **STM32H5 Cube library** (if not done yet):
   - run **STM32CubeMX**
   - go to `Help -> Manage Embedded Software Packages`
-  - within package manager window find `STM32H5`, unroll it and select newest available version ( in your case STM32H5 1.1.0)
+  - within package manager window find `STM32U0`, unroll it and select newest available version ( in your case STM32H5 1.1.0)
   - press `install now`
 <br>
-![H5_Lib_Install](./img/H5Lib.jpg)
-<br>
-- In case of library installation problems please try an alternative way:
-  - download **STM32H5 Cube library** (.zip file)
-  - run **STM32CubeMX**
-  - go to `Help -> Manage Embedded Software Packages`
-  - within package manager window use option `From local` 
-<br>  
-![U5_Lib_Install_from_local](./img/2.png)
-<br>
+![H5_Lib_Install](./img/5555.png)
 
 <ainfo>
-STM32CubeMX and STM32CubeIDE are using the same repository by default, so the installed STM32H5 Cube library will be visible in both tools.
+STM32CubeMX and STM32CubeIDE are using the same repository by default, so the installed STM32U0 Cube library will be visible in both tools.
 </ainfo>
 
 
