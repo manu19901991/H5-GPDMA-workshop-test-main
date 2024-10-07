@@ -3,7 +3,7 @@ Presentation
 ----!
 
 # Introduction
-## Dear Participant of STM32H5 Workshop,
+## Dear Participant of STM32U0 Workshop,
 <br>
 
 <awarning>
@@ -12,7 +12,7 @@ Presentation
 
 ---
 <ainfo>
-You are supposed to move the following section "Before STM32WBA session" once you completed this chapter
+You are supposed to move the following section "Before STM32U0 session" once you completed this chapter
 </ainfo>
 
 ----
@@ -43,18 +43,23 @@ We look forward to seeing you at the STM32H5 Workshop live session!
 # Prerequisites
 - Hardware:
   - **PC with MS Windows 10 operating system and admin rights granted**
-  - **1 type-c/type-A USB** cable 
+  - **2 type-c/type-A USB** cables
   <br>
   ![microUSB cables](./img/0.png)
   <br>
-  - **[NUCLEO-STM32H563ZI](https://www.st.com/en/evaluation-tools/nucleo-h563zi.html)** Nucleo-144 development board. It will be provided to you by ST during the handson
+
+  - **1 Micro USB** cable
+ <br>
+  ![microUSB cables](./img/0000.png)
   <br>
-  ![H5_DK](./img/NUCLEO-H563ZI.jpg)
+
+  - **[NUCLEO-U031R8](https://www.st.com/en/evaluation-tools/nucleo-u031r8.html)** Nucleo-144 development board. It will be provided to you by ST during the handson
+  <br>
+  ![H5_DK](./img/1111.png)
   <br>
 - Software (PC with **MS Windows 10** operating system):
-  - **[STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)** in version 6.9.1
-  - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.13.1
-  - **[STM32H5 Cube library](https://www.st.com/en/embedded-software/stm32cubeh5.html)** in version 1.1.1
+  - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.16.0 or later
+  - **[STM32U0 Cube library](https://www.st.com/en/embedded-software/stm32cubeu0.html)** in version 1.1.0 or later
   - **[Virtual COM port drivers](https://www.st.com/en/development-tools/stsw-stm32102.html)**
   -  any **serial terminal** application (e.g. **[Termite](https://termite.software.informer.com/3.4/)**)
 <br>
