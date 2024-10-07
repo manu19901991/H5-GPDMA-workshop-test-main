@@ -56,7 +56,7 @@ We look forward to seeing you at the STM32H5 Workshop live session!
   <br>
   - **2 female-female wires** (min 10cm length) to connect gold pins 
   <br>
-  ![microUSB cables](./img/3333.png)
+  ![microUSB cables](./img/4444.png)
   <br>
 
   - **[NUCLEO-U031R8](https://www.st.com/en/evaluation-tools/nucleo-u031r8.html)** Nucleo-144 development board. It will be provided to you by ST during the handson
