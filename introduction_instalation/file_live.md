@@ -260,17 +260,15 @@ Please start STM32CubeMonitorPwr and check that you can see similar window as a 
 - Access to tools dedicated web pages:
   - [STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)
   - [STM32CubeMX](https://www.st.com/en/development-tools/stm32cubemx.html)
-  - [STM32H5 Cube library](https://www.st.com/en/embedded-software/stm32cubeh5.html)
+  - [STM32U0 Cube library](https://www.st.com/en/embedded-software/stm32cubeu0.html)
 - [STM32 on-line training resources](https://www.st.com/content/st_com/en/support/learning/stm32-education/stm32-moocs.html)
 - documentation
-  - [STM32H563 datasheet](https://www.st.com/resource/en/datasheet/stm32h563zi.pdf)
-  - [STM32H563 reference manual](https://www.st.com/resource/en/reference_manual/rm0456-stm32u575585-armbased-32bit-mcus-stmicroelectronics.pdf)
-  - [NUCLEO-H563ZI-Q board schematics](https://www.st.com/resource/en/schematic_pack/mb1549-u575ziq-c03_schematic.pdf)
-
-
+  - [STM32U031 datasheet](https://www.st.com/resource/en/datasheet/stm32u031c8.pdf)
+  - [STM32U031 reference manual](https://www.st.com/resource/en/reference_manual/rm0503-stm32u0-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
+  
 ----
 
 
 <ainfo>
-Please now move to "Before STM32WBA session" to finalize the prerequisites for the whole workshop
+Please now move to "Before STM32WL3 session" to finalize the prerequisites for the whole workshop
 </ainfo>
