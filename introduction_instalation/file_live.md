@@ -53,10 +53,23 @@ We look forward to seeing you at the STM32H5 Workshop live session!
   ![microUSB cables](./img/0000.png)
   <br>
 
+  <br>
+  - **2 female-female wires** (min 10cm length) to connect gold pins 
+  <br>
+  ![microUSB cables](./img/3333.png)
+  <br>
+
   - **[NUCLEO-U031R8](https://www.st.com/en/evaluation-tools/nucleo-u031r8.html)** Nucleo-144 development board. It will be provided to you by ST during the handson
   <br>
   ![H5_DK](./img/1111.png)
   <br>
+ <br>
+  - **[STM32L562E-DK](https://www.st.com/en/evaluation-tools/stm32l562e-dk.html)** board which will be lent to each participant for the time of the workshop 
+  <br>
+  ![L5_DK](./img/2222.png)
+  <br>
+
+
 - Software (PC with **MS Windows 10** operating system):
   - **[STM32CubeIDE](https://www.st.com/en/development-tools/stm32cubeide.html)** in version 1.16.0 or later
   - **[STM32U0 Cube library](https://www.st.com/en/embedded-software/stm32cubeu0.html)** in version 1.1.0 or later

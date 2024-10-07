@@ -167,14 +167,14 @@
       "children": [
         {
           "type": "File",
-          "name": "Before STM32H5 session",
+          "name": "Before STM32U0 session",
           "file": "file_live.md"
         }
 ,
         
           {
             "type": "File",
-            "name": "Before STM32WBA session",
+            "name": "Before STM32WL3 session",
             "file": "file_live_1.md"
           }
 
