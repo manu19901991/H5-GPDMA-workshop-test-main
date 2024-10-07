@@ -87,7 +87,7 @@ We look forward to seeing you at the STM32H5 Workshop live session!
 - download and install **STM32H5 Cube library** (if not done yet):
   - run **STM32CubeMX**
   - go to `Help -> Manage Embedded Software Packages`
-  - within package manager window find `STM32U0`, unroll it and select newest available version ( in your case STM32H5 1.1.0)
+  - within package manager window find `STM32U0`, unroll it and select newest available version ( in your case STM32U0 1.1.0)
   - press `install now`
 <br>
 ![H5_Lib_Install](./img/5555.png)
@@ -106,7 +106,7 @@ The purpose of this part is checking whether all software components are install
 <br>
 Additionally prepared test project can be a base for next hands-on parts during the workshop.
 
-## **STM32CubeIDE and STM32H5 Cube library**
+## **STM32CubeIDE and STM32U0 Cube library**
 <br>
 
 ----
@@ -141,53 +141,44 @@ Additionally prepared test project can be a base for next hands-on parts during 
   ![Workspace_start2](./img/New_prj_start_2.gif)
 <br>
 - switch to **Board Selector** tab
-- select NUCLEO-**H563**ZI board
+- select NUCLEO-**U031**R8 board
 - press `Next` button
 - within STM32 Project window:
-  - specify project name (i.e. `H5_UART`)
-  - keep **enable TrustZone** option unchecked
+  - specify project name (i.e. `U0_UART`)
   - press `Finish` button
   - on question pop-up window "Initialize all peripherals with their default state?" press `No` button 
   - on question pop-up window "Switch to proper CubeIDE perspective?", if it is showed, press `Yes` button 
   - on worning pop-up window "Do you still want a code generation?", press `No` button 
-  - on following information pop-up window, it was our decision did not generate code, press `OK` button 
+  - on following information pop-up window, it was our decision did not generate code, press `OK` button
+  - Unselect BSP functionality 
   <br>
-   ![Workspace_start3](./img/CubeIDE_Start.apng)
+   ![Workspace_start3](./img/5555.gif)
 <br>
 - Peripherals configuration: Pinout&Configuration tab
-- **ICACHE configuration** (System Core group)
-  - select either 1-way or 2-ways (we will not focus on performance within this workshop)
-  <br>
-  ![ICACHE configuration](./img/CubeIDE_ICACHE.apng)
-  <br>
-- **USART3 configuration** (Connectivity group)
+
+- **USART2 configuration** (Connectivity group)
   - select Asynchronous mode
   - keep default settings in configuration:
     - Basic parameters: 115200bps, 8bits data, 1 stop bit, no parity
-    - Pins assignment: PD8, PD9
+    - Pins assignment: PA2, PA3
     - no interrupts, no DMA usage
   <br>
-    ![USART3 configuration](./img/CubeIDE_UART.apng)
+    ![USART3 configuration](./img/9999.gif)
 <br>
-- **SWD configuration** (Trace and debug group)
-  - select Serial wire debug
-  - this is usually not necessary, because of default state of SWD pins, but it is good habit to do it
-  <br>
-    ![SWD configuration](./img/CubeIDE_SWD.apng)
-<br>
+
 - **Project settings**
   - select `Project Manager` tab
   - check project location (.ioc file)
   - check project name
 <br>
-   ![Project settings](./img/CubeIDE_Proj.apng)
+   ![Project settings](./img/1717.gif)
 <br>
   - generate project by one of the ways:
     - by pressing "gear" icon
     - by select `Project->Generate Code`
     - by pressing **Alt+K**
 <br>
-  ![Project generation](./img/CubeIDE_GenCode.apng)
+  ![Project generation](./img/1818.gif)
 <br>
 
 ----
