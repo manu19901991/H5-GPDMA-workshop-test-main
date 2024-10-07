@@ -236,7 +236,7 @@ Wait for 250 ms
 <br>
 
 <ainfo>
-In case of neither errors nor warnings after this process, STM32CubeIDE and STM32H5 library are installed correctly. Last point - debug session will be verified during first hands on part on the workshop.
+In case of neither errors nor warnings after this process, STM32CubeIDE and STM32U0 library are installed correctly. Last point - debug session will be verified during first hands on part on the workshop.
 </ainfo>
 
 
