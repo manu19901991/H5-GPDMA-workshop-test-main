@@ -186,11 +186,11 @@ Additionally prepared test project can be a base for next hands-on parts during 
 <br>
 ## **Step2** - coding part (`main.c` file)
 <br>
-Define the buffer of bytes to be sent over **USART3** (`USER CODE PV` section):
+Define the buffer of bytes to be sent over **USART2** (`USER CODE PV` section):
 <br>
 
 ```c
-  uint8_t buffer[]={"Hello STM32H5\r\n"};
+  uint8_t buffer[]={"Hello STM32U0\r\n"};
 ```
 
 <br>
@@ -200,25 +200,22 @@ Turn on **LED1_GREEN** (`USER CODE 2` section):
 <br>
 
 ```c
-  HAL_GPIO_WritePin(LED1_GREEN_GPIO_Port, LED1_GREEN_Pin, 1);
+    HAL_GPIO_WritePin(User_LED_GPIO_Port, User_LED_Pin, 1);
 ```
 
 <br>
 ![Coding2](./img/CubeIDE_Coding2.apng)
 <br>
-Toggle **LED1_GREEN** (`USER CODE 3` section)
+Toggle **User_LED_Pin** (`USER CODE 3` section) 
 <br>
-Toggle **LED2_YELLOW** 
-<br>
-Start transmit of the data over **USART3** using prepared buffer and ***polling*** method
+Start transmit of the data over **USART2** using prepared buffer and ***polling*** method
 <br>
 Wait for 250 ms
 <br>
 
 ```c
-  HAL_GPIO_TogglePin(LED1_GREEN_GPIO_Port, LED1_GREEN_Pin);
-  HAL_GPIO_TogglePin(LED2_YELLOW_GPIO_Port, LED2_YELLOW_Pin);
-  HAL_UART_Transmit(&huart3, buffer, 15, 200);
+  HAL_GPIO_TogglePin(User_LED_GPIO_Port, User_LED_Pin);
+  HAL_UART_Transmit(&huart2, buffer, 15, 200);
   HAL_Delay(250);
 ```
 
@@ -243,6 +240,19 @@ In case of neither errors nor warnings after this process, STM32CubeIDE and STM3
 <ainfo>
 ## **Congratulations** You have completed installation part. Now you are fully prepared for the live workshop session. 
 </ainfo>
+
+## ** 2 STM32CubeMonitorPower **
+
+Please start STM32CubeMonitorPwr and check that you can see similar window as a final effect.
+<br>
+![STM32CubeMonitorPwr](./img/CubeMonPwr.gif)
+<br>
+
+
+<ainfo>
+## **Congratulations** You have completed installation part. Now you are fully prepared for the live workshop session. 
+</ainfo>
+
 
 ----
 
