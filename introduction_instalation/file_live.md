@@ -17,7 +17,7 @@ You are supposed to move the following section "Before STM32U0 session" once you
 
 ----
 
-Welcome to our comprehensive guide on how to prepare for the live version of the STM32H5 Workshop session. This step-by-step guide is designed to provide you with all the necessary information about the prerequisites, installation process, and links to materials that will be useful during the session.
+Welcome to our comprehensive guide on how to prepare for the live version of the STM32U0 Workshop session. This step-by-step guide is designed to provide you with all the necessary information about the prerequisites, installation process, and links to materials that will be useful during the session.
 
 In this guide, you will find detailed information about the required software and hardware, as well as a brief overview of the installation process. Additionally, we have included links to materials that will be helpful during the session.
 
@@ -33,7 +33,7 @@ To navigate through this guide, please use the navigation buttons provided.
 
 If you have any questions or encounter any problems, please do not hesitate to contact us at  **[manuel.marcias@st.com](manuel.marcias@st.com)**
 
-We look forward to seeing you at the STM32H5 Workshop live session!
+We look forward to seeing you at the STM32U0 Workshop live session!
 <br>
 
 ## Yours,
@@ -76,6 +76,7 @@ We look forward to seeing you at the STM32H5 Workshop live session!
   - **[STM32U0 Cube library](https://www.st.com/en/embedded-software/stm32cubeu0.html)** in version 1.1.0 or later
   - **[Virtual COM port drivers](https://www.st.com/en/development-tools/stsw-stm32102.html)**
   - **[STM32Cube Monitor Power](https://www.st.com/en/development-tools/stm32cubemonpwr.html)** in version 1.2.0
+  - **[STM32Cube Programmer](https://www.st.com/en/development-tools/stm32cubeprog.html)** in version 2.17.0 or later
   -  any **serial terminal** application (e.g. **[Termite](https://termite.software.informer.com/3.4/)**)
 <br>
 
@@ -84,7 +85,7 @@ We look forward to seeing you at the STM32H5 Workshop live session!
 - install **STM32CubeMX** (if not yet done)
 - download **STM32CubeIDE** from [here](https://www.st.com/en/development-tools/stm32cubeide.html)
 - Install **STM32CubeIDE** (if not yet done)
-- download and install **STM32H5 Cube library** (if not done yet):
+- download and install **STM32U0 Cube library** (if not done yet):
   - run **STM32CubeMX**
   - go to `Help -> Manage Embedded Software Packages`
   - within package manager window find `STM32U0`, unroll it and select newest available version ( in your case STM32U0 1.1.0)
@@ -130,7 +131,7 @@ Additionally prepared test project can be a base for next hands-on parts during 
 <br>
 ## **Step1** - project creation and peripherals configuration
  - Run **STM32CubeIDE**
- - Specify workspace location (i.e. `C:\_Work\H5_GPDMA`)
+ - Specify workspace location (i.e. `C:\_Work\U0_UART`)
 <br>
 ![Workspace_start](./img/CubeIDE_WS.apng)
 <br>
@@ -196,7 +197,7 @@ Define the buffer of bytes to be sent over **USART2** (`USER CODE PV` section):
 <br>
 ![Coding1](./img/CubeIDE_Coding1.apng)
 <br>
-Turn on **LED1_GREEN** (`USER CODE 2` section):
+Turn on **User_LED_Pin** (`USER CODE 2` section):
 <br>
 
 ```c
