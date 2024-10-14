@@ -266,7 +266,7 @@ Please start STM32CubeMonitorPwr and check that you can see similar window as a 
 - documentation
   - [STM32U031 datasheet](https://www.st.com/resource/en/datasheet/stm32u031c8.pdf)
   - [STM32U031 reference manual](https://www.st.com/resource/en/reference_manual/rm0503-stm32u0-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf)
-  - [Link to power optmization exercize material](hhttps://github.com/manu19901991/STM32H5--South_Africa_Workshop/blob/main/STM32U0_ulp_sw_handson_v2.zip)
+  - [Link to power optmization exercize material](https://github.com/manu19901991/STM32--South_Africa_Workshop/blob/main/STM32U0_ulp_sw_handson_v2.zip)
   
 ----
 
