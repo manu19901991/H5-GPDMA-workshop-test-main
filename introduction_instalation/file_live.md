@@ -7,7 +7,7 @@ Presentation
 <br>
 
 <awarning>
-**.ZIP file containing workshop slides can be found **[here](https://github.com/manu19901991/Bologna)****
+**.ZIP file containing workshop slides can be found **[here] link will be activated few days prior to the workshop****
 </awarning>
 
 ---
