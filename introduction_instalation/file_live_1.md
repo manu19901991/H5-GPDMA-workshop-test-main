@@ -38,8 +38,8 @@ We look forward to seeing you at the STM32WL3 Workshop live session!
   ![H5_DK](./img/555555.png)
   <br>
 - Software (preferred PC with **MS Windows 10** operating system):
-  - STM32WL3 Cube library in version 0.2.0 OEM it will be sent to you from ST representetive few days before the workshop using secure file transfer
-  - ST32WL3 it will be sent to you from ST representetive few days before the workshop sing secure file transfer
+  - STM32WL3 GUI.exe will be sent to you by ST representative a few days before the workshop using secure file transfer
+  - ST32WL3 Command line interface firmware .hex can be found [here](https://github.com/manu19901991/STM32--South_Africa_Workshop/blob/main/CLI.hex)
   - **Sigfox Credentials** from [here](https://github.com/manu19901991/STM32--South_Africa_Workshop/blob/main/Sigfox_binaries.7z) **
   
 <br>
