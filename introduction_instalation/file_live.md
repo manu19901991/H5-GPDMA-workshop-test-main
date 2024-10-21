@@ -238,10 +238,6 @@ In case of neither errors nor warnings after this process, STM32CubeIDE and STM3
 </ainfo>
 
 
-<ainfo>
-## **Congratulations** You have completed installation part. Now you are fully prepared for the live workshop session. 
-</ainfo>
-
 ## ** 2 STM32CubeMonitorPower **
 
 Please start STM32CubeMonitorPwr and check that you can see similar window as a final effect.
