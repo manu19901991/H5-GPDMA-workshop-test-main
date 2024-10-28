@@ -195,7 +195,7 @@ Define the buffer of bytes to be sent over **USART2** (`USER CODE PV` section):
 ```
 
 <br>
-![Coding1](./img/CubeIDE_Coding1.apng)
+![Coding1](./img/90900.gif)
 <br>
 Turn on **User_LED_Pin** (`USER CODE 2` section):
 <br>
@@ -205,7 +205,7 @@ Turn on **User_LED_Pin** (`USER CODE 2` section):
 ```
 
 <br>
-![Coding2](./img/CubeIDE_Coding2.apng)
+![Coding2](./img/90901.gif)
 <br>
 Toggle **User_LED_Pin** (`USER CODE 3` section) 
 <br>
@@ -221,7 +221,7 @@ Wait for 250 ms
 ```
 
 <br>
-![Coding3](./img/CubeIDE_Coding3.apng)
+![Coding3](./img/90902.gif)
 <br>
 
 ----
@@ -230,7 +230,7 @@ Wait for 250 ms
 ## **Step 3** - build the project
 - Build the project using `hammer` button or `Project->Built All` or **Ctrl+B**
 <br>
-![Project build](./img/CubeIDE_Build.apng)
+![Project build](./img/90903.gif)
 <br>
 
 <ainfo>
