@@ -41,7 +41,7 @@ We look forward to seeing you at the STM32WL3 Workshop live session!
   - STM32WL3 GUI.exe will be sent to you by ST representative a few days before the workshop using secure file transfer
   - ST32WL3 Command line interface firmware .hex can be found [here](https://github.com/manu19901991/STM32--South_Africa_Workshop/blob/main/CLI.hex)
   - **Sigfox Credentials** from [here](https://github.com/manu19901991/STM32--South_Africa_Workshop/blob/main/Sigfox_binaries.7z) **
-  -**Sigfox CLI** from [here](https://github.com/manu19901991/STM32--South_Africa_Workshop/blob/main/Sigfox_CLI.hex) **
+  - **Sigfox CLI** from [here](https://github.com/manu19901991/STM32--South_Africa_Workshop/blob/main/Sigfox_CLI.hex) **
   
 <br>
 ----
