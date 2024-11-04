@@ -7,7 +7,7 @@ Presentation
 <br>
 
 <awarning>
-**.ZIP file containing workshop slides can be found **[here] link will be activated few days prior to the workshop****
+**.ZIP file containing workshop slides can be found ****[help](https://github.com/manu19901991/STM32--South_Africa_Workshop/blob/main/STM32_WS_SA_24.zip)****
 </awarning>
 
 ---
